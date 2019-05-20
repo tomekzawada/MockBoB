@@ -14,8 +14,7 @@ body {
   
 }
 
-.no-svg .menu-icon {
-  width: 200px;
-  height: 164px;
-  background-image: url(kiwi.png);
+.no-svg .logo-img {
+  width: 72px;
+  height: 72px;
 }
