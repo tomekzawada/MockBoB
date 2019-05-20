@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .social-bar {
-  background-image: url('https://res.cloudinary.com/tomekz/image/upload/v1557928395/bobimages/social-bar_cklhsv.png');
+  background-image: url('images/social-bar.png');
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -11,10 +11,24 @@ a.white {
 
 body {
   font-size: 0.8rem;
+  background-color: #f5f8fd;
   
 }
 
+footer {
+  background-color: #fff;
+
+}
 .no-svg .logo-img {
   width: 72px;
   height: 72px;
+}
+
+.footer-crown {
+  background-image: url('images/footer-crown.png');
+  background-color: #F6F8FE;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 120px;
+  width: 100%;
 }
