@@ -14,7 +14,8 @@ body {
   
 }
 
-h1 {
-  font-size: 1.6rem;
-  
+.no-svg .menu-icon {
+  width: 200px;
+  height: 164px;
+  background-image: url(kiwi.png);
 }
