@@ -1,0 +1,21 @@
+@charset "UTF-8";
+.social-bar {
+  background-image: url('https://res.cloudinary.com/tomekz/image/upload/v1557928395/bobimages/social-bar_cklhsv.png');
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+a.white {
+  color: white;
+}
+
+body {
+  font-size: 0.8rem;
+  
+}
+
+.no-svg .menu-icon {
+  width: 200px;
+  height: 164px;
+  background-image: url(kiwi.png);
+}
