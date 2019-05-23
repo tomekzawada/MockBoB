@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .social-bar {
-  background-image: url('images/social-bar.png');
+  background-color: #1c2441;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -13,6 +13,30 @@ body {
   font-size: 0.8rem;
   background-color: #f5f8fd;
   
+}
+.signin-link {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+}
+
+.nav-link {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+@media (max-width: 992px){
+  .navbar {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 1200px) {
+  #navSearchBar {
+    display: none !important;  
+  }
 }
 
 footer {
@@ -32,6 +56,27 @@ footer {
   height: 120px;
   width: 100%;
 }
+
+@media (min-width: 768px) {
+  .row.vertical-divider {
+    overflow: hidden;
+  }
+  .row.vertical-divider > div[class^="col-"] {
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+  /*  border-left: 1px solid #aaaaaa;*/
+    border-right: 1px solid #DDDDDD;
+  }
+  .row.vertical-divider div[class^="col-"]:first-child {
+    border-left: none;
+  }
+  .row.vertical-divider div[class^="col-"]:last-child {
+    border-right: none;
+  }
+}
+
 
 .card-signin {
   border: 0;
@@ -60,6 +105,8 @@ footer {
   font-weight: bold;
   padding: 1rem;
   transition: all 0.2s;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 .form-label-group {
@@ -69,51 +116,11 @@ footer {
 
 .form-label-group input {
   height: auto;
-  border-radius: 2rem;
-}
-
-.form-label-group>input,
-.form-label-group>label {
-  padding: var(--input-padding-y) var(--input-padding-x);
-}
-
-.form-label-group>label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  margin-bottom: 0;
-  /* Override default `<label>` margin */
-  line-height: 1.5;
-  color: #495057;
-  border: 1px solid transparent;
-  border-radius: .25rem;
-  transition: all .1s ease-in-out;
+/*  border-radius: 2rem;*/
 }
 
 .form-group {
   border-radius: 0.25rem;
-}
-
-.form-label-group input::-webkit-input-placeholder {
-  color: transparent;
-}
-
-.form-label-group input:-ms-input-placeholder {
-  color: transparent;
-}
-
-.form-label-group input::-ms-input-placeholder {
-  color: transparent;
-}
-
-.form-label-group input::-moz-placeholder {
-  color: transparent;
-}
-
-.form-label-group input::placeholder {
-  color: transparent;
 }
 
 .form-label-group input:not(:placeholder-shown) {
@@ -130,7 +137,7 @@ footer {
 
 
 .form-control {
-  border-radius: 2.5rem;
+/*  border-radius: 2.5rem;*/
 }
 
 input.form-control {
