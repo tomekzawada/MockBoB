@@ -129,10 +129,14 @@ footer {
 }
 
 
-.form-control{
+.form-control {
   border-radius: 2.5rem;
 }
 
+input.form-control {
+	height: 2.5rem;
+	padding-left: 1rem;
+}
 .nextBtn {
   border-radius: 2.5rem;
 }
