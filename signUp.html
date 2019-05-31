@@ -26,20 +26,20 @@
       <a class="navbar-brand" style="overflow: visible; margin-top: -20px; margin-bottom: -20px;" href="#"><img src="images/logo.png"/></a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active justify-content-center"> <a class="nav-link justify-content-center" href="#">
-            <div class="d-flex flex-column align-items-center justify-content-center"> <img  src="images/48x48.png" width="32" alt="Icon" class="logo-img" /> Home <span class="sr-only">(current)</span> </div>
+          <li class="nav-item active justify-content-center"> <a class="nav-link justify-content-center" href="dashboard.html">
+            <div class="d-flex flex-column align-items-center justify-content-center"> <img  src="https://via.placeholder.com/32.png" width="32" alt="Icon" class="logo-img" /> Home <span class="sr-only">(current)</span> </div>
             </a> </li>
           <li class="nav-item justify-content-center flex-column align-content-center"> <a class="nav-link disabled" href="#">
-            <div class="d-flex flex-column align-items-center justify-content-center"> <img src="images/48x48.png" width="32" alt="Icon" class="logo-img"/> Find a brunch </div>
+            <div class="d-flex flex-column align-items-center justify-content-center"> <img src="https://via.placeholder.com/32.png" width="32" alt="Icon" class="logo-img"/> Find a brunch </div>
             </a> </li>
           <li class="nav-item justify-content-center flex-column"> <a class="nav-link disabled" href="#">
-            <div class="d-flex flex-column align-items-center justify-content-center"> <img src="images/48x48.png" width="32" alt="Icon" class="logo-img" /> Invite </div>
+            <div class="d-flex flex-column align-items-center justify-content-center"> <img src="https://via.placeholder.com/32.png" width="32" alt="Icon" class="logo-img" /> Invite </div>
             </a></li>
           <li class="nav-item justify-content-center"> <a class="nav-link disabled" href="#">
-            <div class="d-flex flex-column align-items-center justify-content-center"> <img src="images/48x48.png" width="32" alt="Icon" class="logo-img"> Learn more </div>
+            <div class="d-flex flex-column align-items-center justify-content-center"> <img src="https://via.placeholder.com/32.png" width="32" alt="Icon" class="logo-img"> Learn more </div>
             </a> </li>
           <li class="nav-item justify-content-center"> <a class="nav-link disabled" href="#">
-            <div class="d-flex flex-column align-items-center justify-content-center"> <img src="images/48x48.png" width="32" alt="Icon" class="logo-img" /> Community </div>
+            <div class="d-flex flex-column align-items-center justify-content-center"> <img src="https://via.placeholder.com/32.png" width="32" alt="Icon" class="logo-img" /> Community </div>
             </a> </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -56,7 +56,7 @@
       <div class="col-sm-12 col-md-10 col-lg-8 mx-auto">
         <div class="card card-signin my-5">
           <div class="card-body justify-content-center">
-            <h5 class="card-title text-center">Sign In</h5>
+            <h5 class="card-title text-center">Sign up</h5>
             <div class="row d-flex flex-column align-items-center">
               <div class="stepwizard col-md-offset-3">
                 <div class="stepwizard-row setup-panel">
@@ -66,9 +66,7 @@
                   <div class="stepwizard-step"> <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
                     <p>Profile info</p>
                   </div>
-                  <div class="stepwizard-step"> <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
-                    <p>Complete</p>
-                  </div>
+                  
                 </div>
               </div>
               <div class="row d-flex flex-column align-items-center">
@@ -83,11 +81,13 @@
                         <div class="form-group col-12">
                           <input id="inputPassword" maxlength="100" type="password" required="required" class="form-control" placeholder="Enter password" />
                         </div>
+<!--
                         <div class="form-group col-12">
                           <input id="inputConfirmPassword" maxlength="100" type="password" required="required" class="form-control" placeholder="Confirm password" />
                         </div>
-                        <span class="d-flex justify-content-center">
+-->
                         <div class="form-group d-flex justify-self-end align-self-end">
+                          
                           <button class="btn btn-primary nextBtn btn-lg pull-right">Next</button>
                         </div>
                       </div>
@@ -97,12 +97,9 @@
                     <div class="container col-xs-6 col-md-offset-3">
                       <div class="col-md-12">
                         <h5>Fill in your details</h5>
-                        <h4>Photo</h4>
-                        <div class="row">
-                          <div class=" col-12 col-md-5"><img src="images/avatar.png" width="200"/></div>
-                          <div class="col-12 col-md-7">Upload a photo</div>
-                        </div>
-                        <h4>Basic Info</h4>
+<!--
+                      
+-->
                         <div class="row">
                           <div class="form-group col-12 col-md-6">
                             <input id="inputEmail" maxlength="100" type="text" required="required" class="form-control" placeholder="First name"  />
@@ -128,66 +125,16 @@
                           <div class="col-12 col-md-4">City</div>
                           <div class="col-12 col-md-8">
                             <select class="form-control">
-                              <option value='-'>---</option>
                               <option value="xs">Boston</option>
                               <option value="s">Charlotte</option>
                               <option value="m">Chicago</option>
                               <option value="l">Dallas</option>
                             </select>
                           </div>
-                          <div class="col-12 col-md-4">How did you hear of us</div>
-                          <div class="col-12 col-md-8">
-                            <select class="form-control">
-                              <option value="xs">---</option>
-                              <option value="s">Friend</option>
-                              <option value="m">Family</option>
-                              <option value="l">Web search ad</option>
-                            </select>
-                          </div>
-                          <div class="col-12 col-md-4">College</div>
-                          <div class="col-12 col-md-8">
-                            <select class="form-control">
-                              <option value="">----</option>
-                              <option value="">UCLA</option>
-                              <option value="s">MIT</option>
-                              <option value="l">Berkeley</option>
-                            </select>
-                          </div>
-                          <div class="col-12 col-md-4">Employer</div>
-                          <div class="col-12 col-md-8">
-                              <input id="inputPassword" maxlength="100" type="text" required="required" class="form-control" />
-                          </div>
-                          <div class="col-12 col-md-4">About me</div>
-                          <div class="col-12 col-md-8">
-                            <textarea id="inputPassword" maxlength="100" type="text" required="required" class="form-control" placeholder="About me..."></textarea>
-                          </div>
                         </div>
-                        <h4>SOcial media</h4>
-                        <div class="row">
-                          <div class="col-12 col-md-4">Instagram</div>
-                          <div class="col-12 col-md-8">
-                            <input id="inputPassword" maxlength="100" type="text" required="required" class="form-control" />
-                          </div>
-                          <div class="col-12 col-md-4">Twitter</div>
-                          <div class="col-12 col-md-8">
-                            <input id="inputPassword" maxlength="100" type="text" required="required" class="form-control" />
-                          </div>
-                          <div class="col-12 col-md-4">Facebook</div>
-                          <div class="col-12 col-md-8">
-                            <input id="inputPassword" maxlength="100" type="text" required="required" class="form-control" />
-                          </div>
+                        <div class="d-flex justify-content-end mt-5">
+                          <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bd-onboarding-modal-lg">Submit</button>
                         </div>
-                        <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row setup-content" id="step-3">
-                    <div class="col-xs-6 col-md-offset-3">
-                      <div class="col-md-12">
-                        <h5>Next steps</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt orci ut turpis pharetra semper. Nam sed leo interdum, mattis sapien non, luctus magna. Duis feugiat, eros quis facilisis sollicitudin, felis dolor facilisis nisl, at auctor est neque nec dui. Nullam suscipit tempor ultricies. Vivamus tempus nisi quis quam ultrices feugiat eget sed magna. Sed vestibulum nisi ac neque porta, id mattis dui venenatis. Praesent quis interdum neque. Duis euismod dolor eget porttitor elementum. Integer blandit, nisl in mattis placerat, tortor massa congue augue, nec laoreet ipsum ex sit amet lectus.</p>
-                        <p> Integer at accumsan ante. In hac habitasse platea dictumst. Aenean quis posuere elit. Maecenas quis dui vitae lorem ornare elementum ut id metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam sodales elit ac elit consectetur, sit amet pellentesque justo facilisis. Aliquam nec lorem in massa pulvinar vulputate vel quis erat. Aliquam ut dui interdum, sodales diam in, volutpat eros. Integer mollis efficitur egestas. Aenean ac nisi at nisi convallis maximus. Vestibulum vitae turpis ac sem faucibus dictum iaculis a mauris. Duis convallis tellus id lectus ultrices mattis. Integer eget lobortis lectus, vel ultricies neque. Phasellus id varius ligula, at hendrerit ligula. Duis ut felis vel ligula porttitor interdum. Nulla viverra blandit quam, sit amet venenatis arcu maximus vel.</p>
-                        <button class="btn btn-success btn-lg pull-right" type="submit">Submit</button>
                       </div>
                     </div>
                   </div>
@@ -200,6 +147,86 @@
     </div>
   </div>
 </section>
+  
+<div id="onboardingModal" class="modal fade bd-onboarding-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+       <div class="modal-header">
+         <div class="row d-flex justify-content-center m-3">
+            <h4>You're signed up!</h4>
+          </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+           <div class="container-fluid">
+        <div class="row d-flex flex-column flex-nowrap">
+          <div clas="col-12 d-flex flex-column align-items-center mt-5 mb-5">
+              <div class="row d-flex justify-content-center mt-3">
+                <h5>Nearby brunch series</h5>
+              </div>
+            
+              
+              <div class="d-flex flex-column border m-3 justify-content-between">
+                <div class="d-flex flex-row mt-3">
+                  <div class=" justify-content-center align-items-center ml-2">
+                    <img class="img-fluid max-width" src="https://via.placeholder.com/150x100.png" />
+                  </div>
+                  <div class="col-9 justify-content-around">
+                    <h6>Funny Brunches vol. 1</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="d-flex flex-row mb-3 justify-content-end">
+                      <div class="mt-1 mr-1">
+                        <button class="btn btn-secondary">Full Info</button>
+                      </div>
+                      <div class="mt-1 m-1 mr-2 ">
+                        <button class="btn btn-primary  ">Register</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex flex-column border m-3 justify-content-between">
+                <div class="d-flex flex-row mt-3">
+                  <div class=" justify-content-center align-items-center ml-2">
+                    <img class="img-fluid max-width" src="https://via.placeholder.com/150x100.png" />
+                  </div>
+                  <div class="col-9 justify-content-around">
+                    <h6>Lucky Brunches vol. 3</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="d-flex flex-row mb-3 justify-content-end">
+                      <div class="mt-1 mr-1">
+                        <button class="btn btn-secondary">Full Info</button>
+                      </div>
+                      <div class="mt-1 m-1 mr-2 ">
+                        <button class="btn btn-primary  ">Register</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+            <div class="d-flex flex-column m-3 mt-5 align-items-center border-top border-bottom">
+              <div class="mt-3 mb-3 m-5">
+                <button class="btn btn-primary">Take a tour of BoB</button>
+              </div>
+            </div>
+            
+            <div class="d-flex flex-column m-3 align-items-center">
+              <div class="mt-3 mb-3 m-1">
+                <p><a class="btn-link" href="dashboard.html">Go to dashboard</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+        </div>
+     </div>
+  </div>
+</div>  
+  
 <div class="row justify-content-center footer-crown"></div>
 <footer class="text-center col-12 justify-content-center">
   <div class="container justify-content-center">
@@ -267,44 +294,42 @@
 <script src="js/bootstrap-4.3.1.js"></script> 
 <script type="text/javascript">
     $(document).ready(function () {
-  var navListItems = $('div.setup-panel div a'),
-          allWells = $('.setup-content'),
-          allNextBtn = $('.nextBtn');
+      var navListItems = $('div.setup-panel div a'),
+              allWells = $('.setup-content'),
+              allNextBtn = $('.nextBtn');
 
-  allWells.hide();
+      navListItems.click(function (e) {
+          e.preventDefault();
+          var $target = $($(this).attr('href')),
+                  $item = $(this);
 
-  navListItems.click(function (e) {
-      e.preventDefault();
-      var $target = $($(this).attr('href')),
-              $item = $(this);
-
-      if (!$item.hasClass('disabled')) {
-          navListItems.removeClass('btn-primary').addClass('btn-default');
-          $item.addClass('btn-primary');
-          allWells.hide();
-          $target.show();
-          $target.find('input:eq(0)').focus();
-      }
-  });
-
-  allNextBtn.click(function(){
-      var curStep = $(this).closest(".setup-content"),
-          curStepBtn = curStep.attr("id"),
-          nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
-          curInputs = curStep.find("input[type='text'],input[type='url']"),
-          isValid = true;
-
-      $(".form-group").removeClass("has-error");
-      for(var i=0; i<curInputs.length; i++){
-          if (!curInputs[i].validity.valid){
-              isValid = false;
-              $(curInputs[i]).closest(".form-group").addClass("has-error");
+          if (!$item.hasClass('disabled')) {
+              navListItems.removeClass('btn-primary').addClass('btn-default');
+              $item.addClass('btn-primary');
+              allWells.hide();
+              $target.show();
+              $target.find('input:eq(0)').focus();
           }
-      }
+      });
 
-      if (isValid)
-          nextStepWizard.removeAttr('disabled').trigger('click');
-  });
+      allNextBtn.click(function(){
+          var curStep = $(this).closest(".setup-content"),
+              curStepBtn = curStep.attr("id"),
+              nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+              curInputs = curStep.find("input[type='text'],input[type='url']"),
+              isValid = true;
+
+          $(".form-group").removeClass("has-error");
+          for(var i=0; i<curInputs.length; i++){
+              if (!curInputs[i].validity.valid){
+                  isValid = false;
+                  $(curInputs[i]).closest(".form-group").addClass("has-error");
+              }
+          }
+
+          if (isValid)
+              nextStepWizard.removeAttr('disabled').trigger('click');
+      });
 
   $('div.setup-panel div a.btn-primary').trigger('click');
 });
