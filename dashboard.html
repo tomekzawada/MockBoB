@@ -245,7 +245,7 @@
     <div class="d-flex justify-content-center mt-3">
       <h5>About tomek</h5>
     </div>
-    <div class="row col-12 d-flex flex-row justify-content-around m-5">
+    <div class="col-12 d-flex flex-row justify-content-around m-5">
       
       <div class="col-12 col-md-4">
         
@@ -296,6 +296,7 @@
       <div class="col-12 col-md-8 d-flex justify-content-around flex-column align-items-center">
         <h3>Please, fill in additional profile info!</h3>
         <button class="btn btn-warning">Edit Profile</button>
+        <a href="#!" class="paddle_button" data-product="12345">Buy Now!</a>
       </div>
     </div>
     
@@ -423,5 +424,9 @@
   $('div.setup-panel div a.btn-primary').trigger('click');
 });
   </script>
+  <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+  <script type="text/javascript">
+    Paddle.Setup({ vendor: 51077 });
+  </script> 
 </body>
 </html>
