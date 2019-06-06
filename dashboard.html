@@ -78,7 +78,9 @@
                 </div>
               </div>
               <div class="d-lex flex-row mb-1 mt-1">
-                <button class="btn btn-primary">Register</button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#paymentModalCenter">
+                  Register
+                </button>
                 <button class="btn btn-secondary">Get Info</button>
               </div>
             </div>
@@ -303,7 +305,6 @@
       <div class="col-12 col-md-8 d-flex justify-content-around flex-column align-items-center">
         <h3>Please, fill in additional profile info!</h3>
         <button class="btn btn-warning">Edit Profile</button>
-        <a href="#!" id="buy">Buy Now!</a>
       </div>
     </div>
     
@@ -461,6 +462,11 @@
       // Insert your tokenization key here
       authorization: 'sandbox_6mdkw3m4_5pyc759bq86b5x5f',
       container: '#dropin-container',
+      paypal: {
+        flow: 'checkout',
+        amount: '10.00',
+        currency: 'USD'
+      },
       venmo: {}
     }, function (createErr, instance) {
       button.addEventListener('click', function () {
