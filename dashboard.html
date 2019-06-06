@@ -460,7 +460,8 @@
     braintree.dropin.create({
       // Insert your tokenization key here
       authorization: 'sandbox_6mdkw3m4_5pyc759bq86b5x5f',
-      container: '#dropin-container'
+      container: '#dropin-container',
+      venmo: {}
     }, function (createErr, instance) {
       button.addEventListener('click', function () {
         instance.requestPaymentMethod(function (requestPaymentMethodErr, payload) {
