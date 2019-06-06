@@ -130,7 +130,9 @@
                 <button class="btn btn-secondary">Full Info</button>
               </div>
               <div class="mt-1 m-1 mr-2 ">
-                <button class="btn btn-primary  ">Register</button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#paymentModalCenter">
+                  Register
+                </button>
               </div>
             </div>
           </div>
@@ -149,7 +151,9 @@
                 <button class="btn btn-secondary">Full Info</button>
               </div>
               <div class="mt-1 m-1 mr-2 ">
-                <button class="btn btn-primary  ">Register</button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#paymentModalCenter">
+                  Register
+                </button>
               </div>
             </div>
           </div>
@@ -168,7 +172,9 @@
                 <button class="btn btn-secondary">Full Info</button>
               </div>
               <div class="mt-1 m-1 mr-2 ">
-                <button class="btn btn-primary  ">Register</button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#paymentModalCenter">
+                  Register
+                </button>
               </div>
             </div>
           </div>
@@ -297,7 +303,7 @@
       <div class="col-12 col-md-8 d-flex justify-content-around flex-column align-items-center">
         <h3>Please, fill in additional profile info!</h3>
         <button class="btn btn-warning">Edit Profile</button>
-        <a href="#!" id="buy" class="paddle_button">Buy Now!</a>
+        <a href="#!" id="buy">Buy Now!</a>
       </div>
     </div>
     
@@ -316,6 +322,28 @@
   </div>
 </section>
   
+<!--- Payment modal --> 
+<div class="modal fade" id="paymentModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="dropin-container"></div>
+        <button id="submit-button" class="button button--small button--green">Purchase</button>
+      </div>
+      <div class="modal-footer">
+<!--        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>-->
+<!--        <button type="button" class="btn btn-primary">Save changes</button>-->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Payment modal -->
 <div class="justify-content-center footer-crown"></div>
 <footer class="text-center col-12 justify-content-center">
   <div class="container justify-content-center">
@@ -425,18 +453,45 @@
   $('div.setup-panel div a.btn-primary').trigger('click');
 });
   </script>
-  <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
-  <script type="text/javascript">
-    Paddle.Setup({ vendor: 51077 });
-  </script> 
-  <script type="text/javascript">
-    function openCheckout() {
-      Paddle.Checkout.open({
-        product: 562252,
-        email: 'tomek.zawada@mail.com'
+  <script src="https://js.braintreegateway.com/web/dropin/1.6.1/js/dropin.js"></script>
+  <script>
+    var button = document.querySelector('#submit-button');
+
+    braintree.dropin.create({
+      // Insert your tokenization key here
+      authorization: 'sandbox_6mdkw3m4_5pyc759bq86b5x5f',
+      container: '#dropin-container'
+    }, function (createErr, instance) {
+      button.addEventListener('click', function () {
+        instance.requestPaymentMethod(function (requestPaymentMethodErr, payload) {
+          // When the user clicks on the 'Submit payment' button this code will send the
+          // encrypted payment information in a variable called a payment method nonce
+          $.ajax({
+            type: 'POST',
+            url: '/checkout',
+            data: {'paymentMethodNonce': payload.nonce}
+          }).done(function(result) {
+            // Tear down the Drop-in UI
+            instance.teardown(function (teardownErr) {
+              if (teardownErr) {
+                console.error('Could not tear down Drop-in UI!');
+              } else {
+                console.info('Drop-in UI has been torn down!');
+                // Remove the 'Submit payment' button
+                $('#submit-button').remove();
+              }
+            });
+
+            if (result.success) {
+              $('#checkout-message').html('<h1>Success</h1><p>Your Drop-in UI is working! Check your <a href="https://sandbox.braintreegateway.com/login">sandbox Control Panel</a> for your test transactions.</p><p>Refresh to try another transaction.</p>');
+            } else {
+              console.log(result);
+              $('#checkout-message').html('<h1>Error</h1><p>Check your console.</p>');
+            }
+          });
+        });
       });
-    }
-    document.getElementById('buy').addEventListener('click', openCheckout, false);
+    });
   </script>
 </body>
 </html>
