@@ -16,7 +16,7 @@
   <div class="viewport">
     <nav class="navbar navbar-expand-lg navbar-light bg-blue social-bar justify-content-end">
       <div class="row align-items-center">
-        <ul class="navbar-nav ver">
+        <ul class="navbar-nav ver d-flex flex-row">
           <li class="nav-item white signin-link">
             <a href="signUp.html" class="nav-item white"> Sign up</a>
           </li>
@@ -58,14 +58,16 @@
         <div class="card card-signin my-5">
           <div class="card-body">
             <h5 class="card-title text-center">Sign In</h5>
-            <div class="container form-signin">
-              <div class="row d-flex flex-column-reverse flex-md-row vertical-divider">
-                <div class="col-12 col-md-6 d-flex flex-column justify-content-around">
+            <div class="container form-signin d-flex justify-content-center align-items-center">
+              <div class="row d-flex flex-column-reverse">
+                <div class="col-12 d-flex flex-column justify-content-around">
                   <button class="btn btn-facebook btn-block text-uppercase" type="submit">Continue with facebook</button>
                   <button class="btn btn-google btn-block text-uppercase" type="submit">Continue with Google</button>
-                  <p> <span class="d-flex justify-content-center"> <a href="signUp.html"><em> Sign up with email</em></a></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt orci ut turpis pharetra semper. Nam sed leo interdum, mattis sapien non, luctus magna. Duis feugiat,</p><p> eros quis facilisis sollicitudin, felis dolor facilisis nisl, at auctor est neque nec dui. </p>
+                  <p> <span class="d-flex justify-content-center mt-3"> <em>- or -</em></span> </p>
+<!--
                 </div>
                 <div class="col-12 col-md-6">
+-->
                   <form>
                     <div class="form-label-group">
                       <input type="email" id="inputEmail" class="form-control" placeholder="Email address" autofocus>
@@ -73,9 +75,11 @@
                     <div class="form-label-group">
                       <input type="password" id="inputPassword" class="form-control" placeholder="Password">
                       <span class="d-flex col-12 justitfy-content-right"><a href="#">Forgot username/password?</a></span> </div>
-                    <button class="btn btn-primary btn-block text-uppercase" type="submit">Sign in</button>
-                    </a>
+                    <a href="dashboard.html"><button class="btn btn-primary btn-block text-uppercase" type="submit">Sign in</button></a>
                   </form>
+                  <div class="row mt-2"> 
+                    <p> <span class="d-flex justify-content-center"> Don't have an account? <br/> <a href="signUp.html" class="text-uppercase"><em> Sign up here</em></a></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt orci ut turpis pharetra semper. Nam sed leo interdum, mattis sapien non, luctus magna. Duis feugiat,</p>
+                  </div>
                 </div>
               </div>
             </div>
