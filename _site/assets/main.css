@@ -2393,8 +2393,6 @@ a.text-dark:hover, a.text-dark:focus { color: #1d2124 !important; }
 
 .recent { background-color: LightBlue; }
 
-li { list-style: none; }
-
 .row-1 { background-color: pink; }
 
 .brunch-season { font-size: 0.7rem; }
@@ -2406,6 +2404,8 @@ li { list-style: none; }
 ol { list-style-position: inside; }
 
 ul { padding: 0; margin: 0; }
+
+ul li { list-style: none; }
 
 ul.card-group { margin-top: 2rem; }
 
@@ -2458,5 +2458,7 @@ ul.card-group { margin-top: 2rem; }
 .invites > * { margin-top: 1em; display: block; }
 
 .questions li { margin: 1em 0; }
+
+.recalculate-order { display: flex; flex-direction: column; align-items: flex-end; }
 
 .content { font-size: 20px; }
