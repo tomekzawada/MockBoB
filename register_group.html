@@ -56,7 +56,8 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-12 col-md-6 card p-5">
-      <div class="heading card-title text-center">Small group</div>
+      <h5 class="heading card-title text-center">Brunch table invites</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h6>
       <div class="register-info">You can pay for yourself, specify friends that you want to be on the same team as, and pay for them as well if you like!</div>
       <div class="group">
         <div class="h2">You</div>
@@ -64,23 +65,23 @@
         <div class="friends">
           <div class="h2">Your friends</div>
           <ol start="2">
-            <li> <span class="email">friend1@example.com</span> <span class="remove-icon">x</span> </li>
-            <li> <span class="email">friend2@example.com</span> <span class="remove-icon">x</span> </li>
+            <li> <span class="email">friend1@example.com (invited)</span> <span class="remove-icon">x</span> </li>
+            <li> <span class="email">friend2@example.com (paid for)</span> <span class="remove-icon">x</span> </li>
           </ol>
         </div>
       </div>
       <form class="add-friend">
         <div class="h2">Add friend</div>
         <input class="form-control" placeholder="name@example.com" type="email" />
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="check1">
+          <label class="form-check-label" for="check1">Pay for this person</label>
+        </div>
         <div class="d-flex flex-column align-items-end"> <button class="btn btn-primary mb-2 mt-1" type="submit">add friend</button></div>
       </form>
       <div class="d-flex flex-row justify-content-center">
-        <a class="btn btn-lg btn-primary btn-register" href="consent.html">Register</a>
+        <a class="btn btn-lg btn-primary btn-register" href="checkout_group.html">Register</a>
       </div>
-      <ul class="nav menu d-flex flex-column justify-content-around align-items-center mt-5">
-        <li class="nav-item mt-3"> <a class="btn btn-sm btn-secondary nav-link" href="/tour">Tour of BoB</a> </li>
-        <li class="nav-item mt-3"> <a class="btn btn-sm btn-secondary nav-link" href="/dashboard">Back to Dashboard</a> </li>
-      </ul>
     </div>
   </div>
 </section>

@@ -314,9 +314,9 @@ stepwizard-step p {
 
 .menu { margin: 2em 0; }
 
-.rules { border: 1px solid gray; margin: 2em 0; padding: 1em; }
+.rules { border: 1px solid gray; margin: 1em 0; padding: 1em; }
 
-.terms { border: 1px solid gray; padding: 1em; }
+.terms { border: 1px solid gray; padding: 1em; padding: 1em; }
 
 .order-summary { margin: 2em 0; border-top: 1px solid gray; }
 

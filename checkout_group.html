@@ -68,11 +68,11 @@
                 <p>3 people</p>
                 <ol>
                   <li>Chris Mitchell</li>
-                  <li>friend1@example.com</li>
-                  <li>friend2@example.com</li>
+                  <li>friend1@example.com (invited)</li>
+                  <li>friend2@example.com (paid for)</li>
                 </ol>
-                <a class="btn btn-secondary" href="/register_group">Edit group</a> </div>
-              <div class="col-4">$ 65 x 3</div>
+                <a class="btn btn-secondary" href="register_group.html">Edit group</a> </div>
+              <div class="col-4">$ 65 x 2</div>
             </div>
           </div>
           </div>
@@ -211,6 +211,11 @@
       // Insert your tokenization key here
       authorization: 'sandbox_6mdkw3m4_5pyc759bq86b5x5f',
       container: '#dropin-container',
+      card: {
+        cardholderName: {
+          required: true
+        }
+      },
       venmo: {}
     }, function (createErr, instance) {
       button.addEventListener('click', function () {
